@@ -10,7 +10,7 @@ var n = 10;
 var fibArray = [0,1];
 
 var nthFibArray = function(n) {
-	for (var i = 2; i <= n; i ++) {
+	for (var i = 2; i < n; i ++) {
 		// next el in the array is the sum of the prev two
 		fibArray[i] = fibArray[i-1] + fibArray[i-2];
 	}
@@ -18,7 +18,7 @@ var nthFibArray = function(n) {
 };
 
 // specify the length of the array based on the Nth el desired
-console.log(nthFibArray(n));
+nthFibArray(n);
 
 // since the Nth el is desired, all we need to do is pop it off! Fibs be poppn'!
 var fibPopped = fibArray.pop(n);

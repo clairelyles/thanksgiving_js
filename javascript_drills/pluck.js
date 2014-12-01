@@ -12,8 +12,8 @@ var albums = [
 // albums[0].name
 
 var pluck = function (array, anyKey) {
-	var result = array.map(function(element) {
-	return element[anyKey];
+	var result = array.map(function(currentValue) {
+	return currentValue[anyKey];
 	})
 	return result
 }

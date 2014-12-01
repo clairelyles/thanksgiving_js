@@ -1,15 +1,5 @@
 $(function(){
 
-
-
-
-
-
-
-
-
-
-
 	var $ball = $('.stage').find('.ball');
 	var $shape = $('.stage').find('.shape');
 
@@ -27,16 +17,6 @@ $(function(){
 
 	$ball.on('mouseover', removeBall)
 	$shape.on('mouseout', addBall)
-
-// 	var addBall = function(event) {
-// 		$ball.addClass('ball')
-// 		$ball
-// 			.find('.shape')
-// 			.add
-// 		console.log('testing testing')
-// 	};
-
-// $ball.find('.shape').on('mouseout', addBall)
 
 });
 
